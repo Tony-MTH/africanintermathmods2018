@@ -1,0 +1,89 @@
+body{
+	background: black;
+	color: white;
+}
+#description{
+	background: white;
+	color: black;
+}
+.chapter-thumbnail {
+  margin-top: 10px;   /* add a margin to look nice */
+  /*ite-space : pre;*//* preserve the original line breaks and spacing
+  						 (I need this because the content of the
+  						 chapter is just text not HTML, so normally
+  						 the line breaks would be ignored) */
+  overflow : hidden;  /* don't show a scroll bar when the text is
+                         too big to fit in the box (which it always
+                         will be but we don't mind as it is just a
+                         thumbnail) */
+  max-height: 150px;  /* make sure that the box doesn't get too big */
+  height : 150px;     /* even if the text is big */
+  border-radius: 10px;/* rounded corners */
+}
+
+#mainViewer {
+  margin-top: 10px;
+  /*white-space : pre;*/   /* preserve the original line breaks (see above)*/
+}/
+#mainViewerknowus{
+	background: white;
+	color: black;
+}
+#contactbody{
+	background: white;
+	color: black;
+}
+#backward{
+	background: black;
+	color: white;
+}
+#forward{
+	background: black;
+	color: white;
+}
+
+a{
+	color: gray;
+	text-decoration: none;
+	font-size: 12pt;
+}
+a:hover{
+	/*color: white;*/
+	text-decoration: none;
+}
+h1{
+	font-family: "Times new roman" serif;
+	font-size: 30pt;
+	text-align: center;
+}
+.indent{
+	margin-bottom: 30px;
+}
+.redcolour{
+	color: white;
+}
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+  margin-bottom: 10px;
+}
+
+.large-img{
+  width:100%;
+  height:400px;
+  margin-top: 10px;
+}
+/* @media (min-width: 750px){
+	.responsive{
+		display: inline-block;
+		width: 200px;
+		border: 1px solid black;
+	}
+}
+@media (min-width: 1000px){
+	.responsive{
+		display: inline-block;
+		width: 500px;
+		border: 1px solid black;
+	}
+}*/
