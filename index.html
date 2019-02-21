@@ -2,60 +2,83 @@
 <html>
 <head>
 	<title>Intermathmods Africa</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap_slate.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+  
+      <!-- start collapsed navbar-->
+      <div class="navbar-header">
+        <button 
+        type="button" 
+        class="navbar-toggle collapsed" 
+        data-toggle="collapse" 
+        data-target="#main_navbar" 
+        aria-expanded="false">open!</button>
+      </div><!-- / collapsed navbar-->
+
+      <!-- start un-collapsed navbar-->
+      <div 
+         class="collapse navbar-collapse" 
+         id="main_navbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="knowus.html">Know us</a></li>
+          <li><a href="http://www.mathmods.eu/">Mathmod</a></li>
+          <li><a href="https://www.intermaths.eu/">Intermaths</a></li>
+          <li><a href="https://www.facebook.com/groups/267610863881336/">Facebook</a></li>
+          <li><a href="http://www.mathmods.eu/apply/application-form">Apply</a></li>
+          <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+      </div><!-- / un-collapsed navbar-->
+
+    </div> <!-- /container -->
+  </nav>
 <body>
-	<h1>African Intermaths and Mathmods 2018/2019 Set</h1>
-	<hr></hr>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="index.html" class="redcolour">Home Page</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="knowus.html">Know us</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://www.mathmods.eu/">Go to Mathmod</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://www.intermaths.eu/">Go to Intermaths</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://www.facebook.com/groups/267610863881336/">Facebook page</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://www.mathmods.eu/apply/application-form">Apply</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="contactus.html">Contact us</a>
-	<hr></hr>
+	<div class="row" id="heada"><h1>African Intermaths and Mathmods 2018/2019 Set</h1></div>
 	<div class="container">
+		
 		<div class="row">
 			<div class="col-md-3">
 				<img id="image1" 
-				 class="crop-img" src="img_1.jpg" alt="graffittied building" style="display: none;"/> 
+				 class="crop-img" src="images/img_1.jpg" alt="graffittied building" style="display: none;"/> 
 			</div>
 			<div class="col-md-3">
-				<img id="image2" class="crop-img" src="img_2.jpg" alt="display of cheese" style="display: none;"/> 
+				<img id="image2" class="crop-img" src="images/img_2.jpg" alt="display of cheese" style="display: none;"/> 
 			</div>
 			<div class="col-md-3">
-				<img id="image3" class="crop-img" src="img_3.jpg" alt="synethesizer workshop" style="display: none;"/> 
+				<img id="image3" class="crop-img" src="images/img_3.jpg" alt="synethesizer workshop" style="display: none;"/> 
 			</div>
 			<div class="col-md-3">
-				<img id="image4" class="crop-img" src="img_4.jpg" alt="City night" style="display: none;"/> 
+				<img id="image4" class="crop-img" src="images/img_4.jpg" alt="City night" style="display: none;"/> 
 			</div>
 			<div class="col-md-3">
-				<img id="image5" class="crop-img" src="img_5.jpg" alt="synethesizer workshop" style="display: none;"/> 
+				<img id="image5" class="crop-img" src="images/img_5.jpg" alt="synethesizer workshop" style="display: none;"/> 
 			</div>
 			<div class="col-md-3">
-				<img id="image6" class="crop-img" src="img_6.jpg" alt="City night" style="display: none;"/> 
+				<img id="image6" class="crop-img" src="images/img_6.jpg" alt="City night" style="display: none;"/> 
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-1">
+			<!--<div class="col-md-1">
 				<button id="backward">&lt;</button>
+			</div>-->
+			<div class="col-md-5">
+				<img class="large-img" src="images/img_0.png" alt="graffittied building"/>
 			</div>
-			<div class="col-md-10">
-				<img id="bigImage" class="large-img" src="img_1.jpg" alt="graffittied building"/> 
+			<div class="col-md-7">
+				<img id="bigImage" class="large-img" src="images/img_1.jpg" alt="graffittied building"/> 
 			</div>
-			<div class="col-md-1">
+			<!--<div class="col-md-1">
 				<button id="forward">&gt;</button>
-			</div>
+			</div>-->
 		</div>
 		&nbsp;
 		&nbsp;
@@ -140,96 +163,8 @@ and involves other four leading institutions in Europe:
 	</div>
 	<div class="footer-copyright text-center py-3">© 2019 Copyright
     </div>
-	<script>
-		// whether the slideshow is paused or not
-
-		// whether the slideshow is paused or not
-		var paused = false;
-
-		// when you click on a thumbnail
-		// it sets the src of the big image
-		// to be the same as the image
-		// you clicked on
-		$(".crop-img").click(function(){
-			$("#bigImage").attr('src', 
-				$(this).attr('src'));
-		});
-
-		// the counter variable that keeps
-		// track of which image you are showing
-		var counter = 1;
-		// virtually click on the current
-		// image to load it into the big image
-		$("#image"+counter).click();
-
-		$("#forward").click(function (){
-			counter = counter + 1;
-			if(counter > 6){
-				counter = 1;
-			}
-			$("#image"+counter).click();
-		});
-		$("#backward").click(function (){
-			counter = counter - 1;
-			if(counter < 1){
-				counter = 6;
-			}
-			$("#image"+counter).click();
-		});
-		
-		$("#bigImage").click(function (event){
-			if(event.offsetX < $(this).width()*0.3){
-				counter = counter - 1;
-				if(counter < 1){
-					counter =  6;
-				}
-				$("#image"+counter).click();
-			}
-			else if(event.offsetX > $(this).width()*0.7){
-				counter = counter + 1;
-				if(counter > 6){
-					counter = 1;
-				}
-				$("#image"+counter).click();
-			}else{
-				paused = !paused;
-			}	
-		});
-		setInterval(function (){
-			if(!paused){
-				$("#forward").click();
-			};
-		}, 3000);
-
-
-		///
-		// The javascript code for the Mathmods/Intermaths description
-		var count = 0;
-		$(".chapter-thumbnail").click(function(){
-			$("#mainViewer").html(
-				$(this).html());
-			var id = $(this).attr("id");
-			count = parseInt(id.slice(-1));
-		});
-		$("#chapter"+count).click();
-		$("#mainViewer").click(function (event){
-
-			if(event.offsetX
-				< $(this).width()*0.3){
-				count = count - 1;
-			} else {
-				count = count + 1;
-			}
-			if(count < 0){
-				count =  0;
-			}
-			if(count >=
-				$(".chapter-thumbnail").length){
-				count =
-			$(".chapter-thumbnail").length-1;
-			}
-			$("#chapter"+count).click();
-		});
-	</script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/control.js"></script>
 </body>
 </html>

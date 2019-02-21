@@ -1,11 +1,11 @@
-body{
-	background: black;
-	color: white;
-}
-#description{
+/*#description{
 	background: white;
 	color: black;
-}
+}*/
+/*h1{color: white;}*/
+h3{color: orange;}
+h4{color: yellow;}
+#heada{background: black;}
 .chapter-thumbnail {
   margin-top: 10px;   /* add a margin to look nice */
   /*ite-space : pre;*//* preserve the original line breaks and spacing
@@ -19,15 +19,18 @@ body{
   max-height: 150px;  /* make sure that the box doesn't get too big */
   height : 150px;     /* even if the text is big */
   border-radius: 10px;/* rounded corners */
+  background: black;
 }
 
 #mainViewer {
   margin-top: 10px;
+  background: black;
+  color: white;
   /*white-space : pre;*/   /* preserve the original line breaks (see above)*/
 }/
 #mainViewerknowus{
-	background: white;
-	color: black;
+	/*background: white;
+	color: black;*/
 }
 #contactbody{
 	background: white;
@@ -42,15 +45,7 @@ body{
 	color: white;
 }
 
-a{
-	color: gray;
-	text-decoration: none;
-	font-size: 12pt;
-}
-a:hover{
-	/*color: white;*/
-	text-decoration: none;
-}
+
 h1{
 	font-family: "Times new roman" serif;
 	font-size: 30pt;
@@ -69,7 +64,7 @@ h1{
 }
 
 .large-img{
-  width:100%;
+  /*width:100%;*/
   height:400px;
   margin-top: 10px;
 }
