@@ -2,28 +2,43 @@
 <html>
 <head>
 	<title>Intermathmods Africa</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap_slate.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/forms.css">
 </head>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+  
+      <!-- start collapsed navbar-->
+      <div class="navbar-header">
+        <button 
+        type="button" 
+        class="navbar-toggle collapsed" 
+        data-toggle="collapse" 
+        data-target="#main_navbar" 
+        aria-expanded="false">open!</button>
+      </div><!-- / collapsed navbar-->
+
+      <!-- start un-collapsed navbar-->
+      <div 
+         class="collapse navbar-collapse" 
+         id="main_navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="knowus.html">Know us</a></li>
+          <li><a href="http://www.mathmods.eu/">Mathmod</a></li>
+          <li><a href="https://www.intermaths.eu/">Intermaths</a></li>
+          <li><a href="https://www.facebook.com/groups/267610863881336/">Facebook</a></li>
+          <li><a href="http://www.mathmods.eu/apply/application-form">Apply</a></li>
+          <li class="active"><a href="contactus.html">Contact us</a></li>
+        </ul>
+      </div><!-- / un-collapsed navbar-->
+
+    </div> <!-- /container -->
+  </nav>
 <body >
-	<h1>African Intermaths and Mathmods 2018/2019 Set</h1>
-	<hr></hr>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="index.html">Home Page</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="knowus.html">Know us</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://www.mathmods.eu/">Go to Mathmod</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://www.intermaths.eu/">Go to Intermaths</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="https://www.facebook.com/groups/267610863881336/">Facebook page</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://www.mathmods.eu/apply/application-form">Apply</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="contactus.html" class="redcolour">Contact us</a>
-	<hr></hr>
+	<div class="row" id="heada"><h1>African Intermaths and Mathmods 2018/2019 Set</h1></div>
+	<br>
 	<div class="container" id="forms">
 	  <form method="post" action="send_mail.php">
 
@@ -43,5 +58,6 @@
 	<div class="footer-copyright text-center py-3">© 2019 Copyright
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
