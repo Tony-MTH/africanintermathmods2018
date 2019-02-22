@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Intermathmods Africa</title>
-
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v3.0.3.js"></script>
+    
+    <!-- 
+      These are our javascript files.
+      Intmod.js contains the data
+      itemList.js is the code
+    -->
+    <script src="js/Intmod.js"> </script>
+    <script src="js/itemList.js"> </script>
+	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap_slate.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,12 +33,11 @@
       <!-- start collapsed navbar-->
       <div class="navbar-header">
         <button 
-	        type="button" 
-	        class="navbar-toggle collapsed" 
-	        data-toggle="collapse" 
-	        data-target="#main_navbar" 
-	        aria-expanded="false">expand
-    	</button>
+        type="button" 
+        class="navbar-toggle collapsed" 
+        data-toggle="collapse" 
+        data-target="#main_navbar" 
+        aria-expanded="false">open!</button>
       </div><!-- / collapsed navbar-->
 
       <!-- start un-collapsed navbar-->
@@ -48,28 +58,12 @@
     </div> <!-- /container -->
   </nav>
 <body>
-	
+	<div class="row" id="heada"><h1>African Intermaths and Mathmods 2018/2019 Set</h1></div>
 	<div class="container">
-		<div class="row" id="heada"><h1>African Intermaths and Mathmods 2018/2019 Set</h1></div>
+		
 		<div class="row">
-			<div class="col-md-3">
-				<img id="image1" 
-				 class="crop-img" src="images/img_1.jpg" alt="graffittied building" style="display: none;"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image2" class="crop-img" src="images/img_2.jpg" alt="display of cheese" style="display: none;"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image3" class="crop-img" src="images/img_3.jpg" alt="synethesizer workshop" style="display: none;"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image4" class="crop-img" src="images/img_4.jpg" alt="City night" style="display: none;"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image5" class="crop-img" src="images/img_5.jpg" alt="synethesizer workshop" style="display: none;"/> 
-			</div>
-			<div class="col-md-3">
-				<img id="image6" class="crop-img" src="images/img_6.jpg" alt="City night" style="display: none;"/> 
+			<div class="col-md-3" id="hiddenImages">
+				
 			</div>
 		</div>
 		<div class="row">
@@ -90,76 +84,9 @@
 		&nbsp;
 		<div class="row" id="description">
 			<div class="col-md-3">
-				<!--
-					This is a list view that will
-					contain all the chapter thumbnails
-				-->
 				<ul class="list-group scrollable" id="chapterlist">
-					<!--
-						The id contains the chapter number, something
-						we will use in the JS code
-						The class list-group-item is for bootstrap
-						and chapter-thumbnail is for our code
-					-->
-            		<li id="chapter0" class="list-group-item chapter-thumbnail">
-<h3>InterMaths</h3>
-<p>InterMaths is a joint MSc programme leading to a double MSc degree in Applied and Interdisciplinary Mathematics between our 74 partners:</p>
-<ol>
-	<li>University of L’Aquila in Italy (UAQ) [coordinating institution]</li>
-	<li>Brno University of Technology in the Czech Republic (BUT)</li>
-	<li>University of Silesia in Katowice in Poland (US)</li>
-	<li>Ivan Franko National University of Lviv in Ukraine (IFNUL)</li>
-	<li>V. N. Karazin Kharkiv National University in Ukraine (KhNU)</li>
-	<li>Gdansk University of Technology in Poland (GUT)</li>
-	<li>Taras Shevchenko National University of Kyiv in Ukraine (TSNUK).</li>
-</ol>
-<p>We offer an interdisciplinary mathematical education for both LOCAL and INTERNATIONAL students coming from all over the world. In a nutshell, studying in InterMaths means:</p>
-<ul>
-	<li>2 different countries</li>
-	<li>2 academic years (120 ECTS credits) structured in 4 semesters</li>
-	<li>7 study paths</li>
-	<li>programme entirely taught in English</li>
-	<li>possibility to learn 2 European languages</li>
-	<li>scholarships covering most tuition, accommodation and insurance expenses</li>
-</ul>
-            		</li>
-            		<li id="chapter1" class="list-group-item chapter-thumbnail">
-<h3>MathMods</h3>
-<p>MathMods is a two-year (120 ECTS credits) Joint Master's Degree run by 4 European universities, which aim to provide students with a cross cultural education while they get acquainted with both theory and applications of mathematical modelling in engineering.</p>
-<p>Since its establishement in 2008 MathMods was funded by the EU Commission firstly through the Erasmus Mundus programme action 1 A (project no. 2008-0100), and later through the Erasmus+ Key Action 1 programme, project no. 2013-0227.</p>
-<h4>AIMS</h4>
-<p>Mathematical modelling lies at the heart of most current technological innovations and has become a fundamental tool in many fields of engineering. Essentially multidisciplinary in its applications, mathematical modelling and simulation is in its own right a key technology which is bound to increase its presence within efficient industries and business innovation departments. The proposed programme reflects this multidisciplinarity, drawing on the unifying mathematical aspects from the various and often separate engineering disciplines. This allows the development of an essentially unified methodological approach to modelling and simulation of real engineering challenges</p> 
-<h4>CONSORTIUM</h4>
-The MathMods Consortium is coordinated by the University of L'Aquila in Italy (UAQ)
-and involves other four leading institutions in Europe:
-<ol>
-	<li>Vienna University of Technology in Austria (TUW)</li>
-	<li>University of Hamburg (UHH) in Germany (UHH)</li>
-	<li>University of Côte d'Azur in Nice - France (UCA).</li>
-</ol>
-<p>The geographical profile of the consortium covers South, Central and East Europe, bringing an air of diversity that contributes to the complementarity in the cultural aspects, in the teaching tradition, and in the expertise topics. The departments involved have a common topic in the key expression "application of mathematics", but from quite different perspectives. We believe that we have found in this partnership an interesting equilibrium between theory, computation, and application of the science and art of abstract modelling of real phenomena.</p>
 
-<h4>STUDY PROGRAMME, MOBILITY SCHEME AND STUDY PATHS</h4>
-<p>he MathMods Master's degree course consists of a cycle of four semesters starting each September and awarding 30 ECTS credits each (thus 120 ECTS credits in total). The mobility scheme involves two different locations, at least, over the whole programme. The first year is common for all students: this is meant to provide for a homogeneous knowledge platform across the whole group. The second year is divided into five study paths (aka specialisations, branches or tracks), which reflect our partners' field of research and excellence. Students will eventually spend their fourth semester on preparing their Master's Thesis.</p>
-<ul>
-	<li>Semester 1: Theory at UAQ, Italy</li>
-
-	<li>Semester 2: Numerics at TUW (Austria) or UHH, Germany</li>
-
-	<li>Semester 3: Applications at one of our 5 partners</li>
-		<ul>
-		    <li>Mathematical models in social sciences (UAQ, Italy)</li>
-		    <li>Mathematical modelling and optimisation (UAQ, Italy)</li>
-		    <li>Modelling and simulation of complex systems (UHH, Germany)</li>
-		    <li>Mathematical modelling applications to finance (UCA, France)</li>
-		    <li>Advanced modelling and numerics for applied PDEs (TUW, Austria)</li>
-		</ul>
-	<li>4Semester 4: Thesis at UHH / UAQ / UCA / TUW</li>
-</ul>
-<a href="http://www.mathmods.eu">Read more</a>
-
-            		</li>
-          		</ul>
+				</ul>	
           	</div>
           	<div class="col-md-9">
 				<div class="well" id="mainViewer" >
@@ -169,8 +96,61 @@ and involves other four leading institutions in Europe:
 	</div>
 	<div class="footer-copyright text-center py-3">© 2019 Copyright
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/control.js"></script>
+    <script id="intmod-template" type="text/x-handlebars-template">
+    	{{#each intmod1}}
+			<li id="{{index}}" class="list-group-item chapter-thumbnail">
+				<h3>{{header}}</h3>
+				<p>{{paragraph1}}</p>
+				<ol>
+					{{#each desc1}}
+						<li><a href="{{web}}">{{name}}</a></li>
+					{{/each}}
+				</ol>
+				<p>{{paragraph2}}</p>
+				<ul>
+					{{#each desc2}}
+						<li>{{name}}</li>
+					{{/each}}
+				</ul>
+			</li>
+		{{/each}}
+		{{#each intmod2}}
+			<li id="{{index}}" class="list-group-item chapter-thumbnail">
+				<h3>{{header}}</h3>
+				<p>{{paragraph1}}</p>
+				<p>{{paragraph2}}</p>
+				<h4>{{header1}}</h4>
+				<p>{{paragraph3}}</p>
+				<h4>{{header2}}</h4>
+				{{paragraph4}}
+				<ol>
+					{{#each desc1}}
+						<li><a href="{{web}}">{{name}}</a></li>
+					{{/each}}
+				</ol>
+				<p>{{paragraph5}}</p>
+				<h4>{{header3}}</h4>
+				<p>{{paragraph6}}</p>
+				<ul>
+					<li>{{sem1}}</li>
+					<li>{{sem2}}</li>
+					<li>{{sem3}}</li>
+						<ul>
+							{{#each desc2}}
+								<li>{{name}}</li>
+							{{/each}}
+						</ul>
+					<li>{{sem4}}</li>
+				</ul>
+				<a href="{{aweb}}">{{last}}</a>
+			</li>
+		{{/each}}
+	</script>
+    <script id="image-template" type="text/x-handlebars-template">
+		{{#each displayImages}}
+			<img id="{{id}}" 
+				 class="crop-img" src="{{src}}" alt="{{alt}}" style="{{style}}"/> 
+		{{/each}}
+	</script>
 </body>
 </html>
